@@ -58,16 +58,15 @@ header {
     background-color: black;
     align-items: center;
     border-bottom: 1px solid seashell;
+    top:0px;
 }
 
 header img{
   height: 50px;
   padding-left: 10px;
-
 }
 
 nav {
-  /*display: block;*/
   text-align: right;
   flex-grow: 1;
 }
@@ -86,9 +85,13 @@ a{
 
 .maincontainer {
   padding-top: 69px;
-  opacity: 0.9;
   width: 1200px;
   margin:auto;
+  opacity: 0.9;
+  display: flex;
+  justify-content: center;
+  flex-flow: column wrap;
+  align-content: center;
 }
 
 .div {
@@ -97,21 +100,36 @@ a{
 
 /* Mission section rules*/
 
-#Mission {
+#mission {
+  display:flex;
+  background-size:cover;
   height: 700px;
-  background-image: url ("./photos/img-mission-background.jpg")
-  padding-top: 70px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-image: url("../photos/img-mission-background.jpg");
 }
 
-#Mission .mission-content {
+.content {
   background-color: black;
-  width: 100px;
-  margin: auto;
+  width: 1200px;
+  margin: 0 auto;
+  font-size: 28px;
+  padding: 10px 10px 0 10px;
+  opacity: 1;
+  z-index: 1;
+  display: flex;
+}
+
+.content h4 h2 {
+  font-size: 25px;
+  text-align: center;
+  margin: 10px 0;
 }
 
 /* Store section rules*/
 
-#Store {
+#store {
   height: 700px;
   width: 1000px;
   padding-top: 70px;
@@ -138,13 +156,14 @@ a{
 
 /* Locations section rules*/
 
-#Locations {
+#locations {
   height: 500px;
-  background-image: url ("./photos/img-locations-background.jpg")
+  background-image: url("../photos/img-locations-background.jpg");
   padding-top: 70px;
+  padding-bottom: 70px;
 }
 
-#Locations .flex-container {
+#locations .flex-container {
   margin: auto;
   width: 1100px;
 }
@@ -155,12 +174,13 @@ a{
 
 .location {
   width: 300px;
+  background-color: black;
   opacity: 1.0;
   padding: 10px;
-  margin: 5px 20px;
+  margin: 15px 20px;
   flex-basis: 280px;
+  flex-flow: column wrap;
   display: flex;
-  flex-direction: column;
   justify-content: center;
 }
 
@@ -168,6 +188,8 @@ a{
 
 #contact {
   height: 200px;
+  padding-top: 0;
+  margin-top: 0;
 }
 
 /* Footer rules*/
