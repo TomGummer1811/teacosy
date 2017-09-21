@@ -1,0 +1,179 @@
+/*Universal rules*/
+
+body {
+    font-family: Helvetica, sans-serif;
+    color: seashell;
+    background-color: black;
+    font-size: 22px;
+    text-align: center;
+    margin: 0px;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+h2 {
+  display: block;
+  font-size: 1.5em;
+  font-weight: bold;
+  margin: 0px
+  padding: 10px;
+}
+
+h3 {
+  display: block;
+  font-size: 1.17em;
+  font-weight: bold;
+  margin: 0px
+  padding: 10px;
+}
+
+h4 {
+  display: block;
+  font-weight: bold;
+  margin: 0px
+  padding: 10px;
+}
+
+h5{
+  display:block;
+  font-size:0.83em;
+  font-weight: bold;
+}
+
+p {
+  display:block;
+}
+
+/* Header rules */
+
+header {
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    height: 69px;
+    background-color: black;
+    align-items: center;
+    border-bottom: 1px solid seashell;
+}
+
+header img{
+  height: 50px;
+  padding-left: 10px;
+
+}
+
+nav {
+  /*display: block;*/
+  text-align: right;
+  flex-grow: 1;
+}
+
+nav span {
+  display: inline-block;
+  padding: 20px 10px;
+}
+
+a{
+  color:seashell;
+  text-decoration: underline;
+}
+
+/* Main container rules */
+
+.maincontainer {
+  padding-top: 69px;
+  opacity: 0.9;
+  width: 1200px;
+  margin:auto;
+}
+
+.div {
+  display:block;
+}
+
+/* Mission section rules*/
+
+#Mission {
+  height: 700px;
+  background-image: url ("./photos/img-mission-background.jpg")
+  padding-top: 70px;
+}
+
+#Mission .mission-content {
+  background-color: black;
+  width: 100px;
+  margin: auto;
+}
+
+/* Store section rules*/
+
+#Store {
+  height: 700px;
+  width: 1000px;
+  padding-top: 70px;
+  margin:auto;
+}
+
+.item {
+    padding: 5px;
+  }
+
+.item img {
+  height:200px;
+  width: 300px;
+  display: block;
+  margin: 10px;
+}
+
+.item span {
+  display: block;
+  font-weight: bold;
+  text-align: center;
+  padding: 5px;
+}
+
+/* Locations section rules*/
+
+#Locations {
+  height: 500px;
+  background-image: url ("./photos/img-locations-background.jpg")
+  padding-top: 70px;
+}
+
+#Locations .flex-container {
+  margin: auto;
+  width: 1100px;
+}
+
+.flex-container.locations {
+  padding-top: 5px;
+}
+
+.location {
+  width: 300px;
+  opacity: 1.0;
+  padding: 10px;
+  margin: 5px 20px;
+  flex-basis: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Contact rules*/
+
+#contact {
+  height: 200px;
+}
+
+/* Footer rules*/
+
+footer {
+  text-align: left;
+  padding-left: 20px;
+  display: block;
+}
